@@ -11,7 +11,7 @@ class ComingSoon extends StatelessWidget {
         child: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
+            children: const <Widget>[
               Text("COMING SOON!"),
             ],
           ),
