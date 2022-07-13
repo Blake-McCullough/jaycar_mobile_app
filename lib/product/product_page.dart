@@ -94,7 +94,7 @@ class _Product_ResultsState extends State<Product_Results> {
                             ]),
                         ]),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 50,
                   ),
                   for (var i in snapshot.data!["Specifications"])

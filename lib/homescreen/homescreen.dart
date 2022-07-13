@@ -1,13 +1,14 @@
 // ignore_for_file: prefer_const_constructors
 
 import 'package:flutter/material.dart';
-import 'package:jaycar_mobile_app/comingsoon.dart';
+
 import 'package:jaycar_mobile_app/search/search_results.dart';
-import 'package:jaycar_mobile_app/settings/settings.dart';
-import 'package:persistent_bottom_nav_bar/persistent-tab-view.dart';
 
 class HomePage extends StatefulWidget {
+  const HomePage({Key? key}) : super(key: key);
+
   @override
+  // ignore: library_private_types_in_public_api
   _HomePageState createState() => _HomePageState();
 }
 
@@ -29,6 +30,7 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
+// ignore: use_key_in_widget_constructors
 class TextBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

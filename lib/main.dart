@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:jaycar_mobile_app/navbar.dart';
 
+//IDEAS:
+//have it so that when you click description sets to true, then when click on another sets false and then loads that module thingy :)
+//Tidy it up a bit and a basic prototype is made lol.
+
 Future<void> main() async {
   runApp(MyApp());
 }
