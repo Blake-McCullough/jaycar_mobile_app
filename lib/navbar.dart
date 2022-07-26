@@ -37,13 +37,13 @@ class _PersistantBar extends State<PersistantBar> {
       PersistentBottomNavBarItem(
           icon: Icon(Icons.search),
           title: ("Explore"),
-          activeColorPrimary: Color.fromRGBO(4, 218, 198, 1),
-          inactiveColorPrimary: Color.fromRGBO(255, 255, 255, 1)),
+          activeColorPrimary: Color.fromRGBO(0, 159, 227, 1),
+          inactiveColorPrimary: Color.fromRGBO(255, 248, 249, 1)),
       PersistentBottomNavBarItem(
           icon: Icon(Icons.person),
           title: ("My Stuff"),
-          activeColorPrimary: Color.fromRGBO(4, 218, 198, 1),
-          inactiveColorPrimary: Color.fromRGBO(255, 255, 255, 1))
+          activeColorPrimary: Color.fromRGBO(0, 159, 227, 1),
+          inactiveColorPrimary: Color.fromRGBO(255, 248, 249, 1))
     ];
   }
 
@@ -56,7 +56,7 @@ class _PersistantBar extends State<PersistantBar> {
       items: _navBarsItems(),
       confineInSafeArea: true,
       backgroundColor:
-          Color.fromRGBO(55, 0, 179, 1), // Default is Colors.white.
+          Theme.of(context).primaryColor, // Default is Colors.white.
       handleAndroidBackButtonPress: true, // Default is true.
       resizeToAvoidBottomInset:
           true, // This needs to be true if you want to move up the screen when keyboard appears. Default is true.
