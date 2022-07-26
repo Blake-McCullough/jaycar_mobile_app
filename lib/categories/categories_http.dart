@@ -8,7 +8,7 @@ Future<Map<String, dynamic>> getCategoriesQuery(
     String searchQuery, String pageNumber) async {
   //Gets the json for the users info
   String urlsearch =
-      'http://192.168.20.14/search?key=magickey&search=$searchQuery&page=$pageNumber';
+      'http://192.168.20.14/cat?key=magickey&search=$searchQuery&page=$pageNumber';
 
   print(urlsearch);
 

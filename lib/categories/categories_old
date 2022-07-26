@@ -1,23 +1,27 @@
-import 'package:flutter/material.dart';
-import 'package:jaycar_mobile_app/product/product_page.dart';
-import 'package:jaycar_mobile_app/search/search_http.dart';
+// ignore_for_file: library_private_types_in_public_api
 
-class Search_Results extends StatefulWidget {
+import 'package:flutter/material.dart';
+import 'package:jaycar_mobile_app/categories/categories_http.dart';
+
+import 'package:jaycar_mobile_app/product/product_page.dart';
+
+// ignore: camel_case_types
+class Categories_Results extends StatefulWidget {
   final String searchQuery;
   final String pageNumber;
-  const Search_Results({
+  const Categories_Results({
     Key? key,
-    required this.pageNumber,
     required this.searchQuery,
+    required this.pageNumber,
   }) : super(key: key);
 
   @override
-  _Search_ResultsState createState() => _Search_ResultsState();
+  _Categories_ResultsState createState() => _Categories_ResultsState();
 }
 
-class _Search_ResultsState extends State<Search_Results> {
+class _Categories_ResultsState extends State<Categories_Results> {
   late Future<Map<String, dynamic>> parJson =
-      getSearchQuery(widget.searchQuery, widget.pageNumber);
+      getCategoriesQuery(widget.searchQuery, widget.pageNumber);
 
   @override
   Widget build(BuildContext context) {
@@ -174,6 +178,3 @@ class _Search_ResultsState extends State<Search_Results> {
     );
   }
 }
-/*,*/
-
-                                            

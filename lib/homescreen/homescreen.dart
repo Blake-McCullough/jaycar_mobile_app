@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                   MaterialPageRoute(
                     builder: (context) => Categories_Results(
                       pageNumber: '0',
-                      searchQuery: 'power',
+                      searchQuery: 'hobbiesgadgets',
                     ),
                   ),
                 );

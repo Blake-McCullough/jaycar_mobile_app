@@ -1,6 +1,8 @@
 import 'dart:convert';
 
+import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:shared_preferences/shared_preferences.dart';
 
 final _client = http.Client();
 
@@ -14,8 +16,15 @@ Future<Map<String, dynamic>> getProductInfo(String productCode) async {
     Uri.parse(urlsearch),
   );
   print(response);
+  SharedPreferences prefs = await SharedPreferences.getInstance();
+  prefs.clear();
+  print("Product Code");
+  print(productCode);
 
   var data = jsonDecode(response.body);
+  bool existed = true;
+  data['Favourites'] = existed ? "True" : "False";
+
   print(data);
   return data;
 }
