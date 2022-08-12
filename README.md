@@ -5,7 +5,7 @@ A mobile app which uses a web scraper inorder to scrape results from the jaycar 
 ## Important links
 
 - [Jaycar Website](https://www.jaycar.com.au/)
-- [Webscraper API](https://www.jaycar.com.au/)
+- [Webscraper API](https://github.com/Blake-McCullough/JayCar_Webscrape_API)
 
 
 ##Screenshots:
